@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gencobo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/gencobo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="boost_system" />
+					<Add library="boost_filesystem" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/gencobo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="boost_system" />
+					<Add library="boost_filesystem" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="cobMain.cpp" />
+		<Unit filename="cobMain.h" />
+		<Unit filename="gencoboApp.cpp" />
+		<Unit filename="gencoboApp.h" />
+		<Unit filename="gencoboMain.cpp" />
+		<Unit filename="gencoboMain.h" />
+		<Unit filename="wxsmith/cobMain.wxs" />
+		<Unit filename="wxsmith/gencoboframe.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="gencoboApp.cpp" main="gencoboFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/gencoboframe.wxs" src="gencoboMain.cpp" hdr="gencoboMain.h" fwddecl="0" i18n="1" name="gencoboFrame" language="CPP" />
+					<wxDialog wxs="wxsmith/cobMain.wxs" src="cobMain.cpp" hdr="cobMain.h" fwddecl="0" i18n="1" name="cobMain" language="CPP" />
+				</resources>
+			</wxsmith>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

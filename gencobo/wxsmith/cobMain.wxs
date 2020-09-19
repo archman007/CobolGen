@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="cobMain">
+		<size>400,318</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<handler function="OnInit" entry="EVT_INIT_DIALOG" />
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>Program Name</label>
+			<pos>8,8</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="edtProgName" member="yes">
+			<value>ofl</value>
+			<pos>8,32</pos>
+			<size>168,32</size>
+			<handler function="OnTextCtrl1Text" entry="EVT_TEXT" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>Program Author</label>
+			<pos>8,72</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>Prigram ID</label>
+			<pos>8,136</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="edtProAuth" member="yes">
+			<value>Mr. Arch Brooks</value>
+			<pos>8,96</pos>
+			<size>384,32</size>
+			<handler function="OnTextCtrl1Text1" entry="EVT_TEXT" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="edtPid" member="yes">
+			<value>Your-program-name</value>
+			<pos>8,160</pos>
+			<size>384,32</size>
+			<handler function="OnTextCtrl1Text2" entry="EVT_TEXT" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="btnOk" member="yes">
+			<label>OK</label>
+			<pos>64,272</pos>
+			<handler function="OnbtnOkClick1" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON2" variable="btnCancel" member="yes">
+			<label>Cancel</label>
+			<pos>192,272</pos>
+			<handler function="OnbtnCancelClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+			<label>Short Description</label>
+			<pos>8,200</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="edtSDes" member="yes">
+			<value>Short Description Goes Here</value>
+			<pos>8,224</pos>
+			<size>384,32</size>
+		</object>
+	</object>
+</wxsmith>
